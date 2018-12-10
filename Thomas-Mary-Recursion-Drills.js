@@ -126,3 +126,29 @@
 // console.log(stringSplitter("hello-world", "-"));
 
 //expected output = ['hello', 'world']
+
+
+
+
+// Binary Representation - not working!
+function binaryRep(num) {
+  if (num < 0) {
+    return '';
+  }
+  let binary = Math.floor(num%2);
+  return binaryRep(Math.floor(num/2)) + binary;
+} 
+
+console.log(binaryRep(25));
+
+
+
+// Factorial
+// function factorial(num) {
+//   if (num <= 0) {
+//     return 1;
+//   }
+//   return num * factorial(num - 1);
+// }
+
+// console.log(factorial(5));
