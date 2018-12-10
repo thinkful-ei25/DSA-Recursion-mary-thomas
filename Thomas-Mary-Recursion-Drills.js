@@ -114,13 +114,15 @@
 
 
 // String Splitter
-function stringSplitter(string, separator) {
-  return string;
-}
+// function stringSplitter(string, separator) {
+//   var index = string.indexOf(separator)
+//   if(index === -1){
+//     return [string];
+//   }
+  
+// return [string.slice(0,index)].concat(stringSplitter(string.slice(index+separator.length), separator))
+// }
 
-let string = 'dog cat rat';
-expected = 
-dog
-cat
-rat
-console.log(stringSplitter(string, ' '));
+// console.log(stringSplitter("hello-world", "-"));
+
+//expected output = ['hello', 'world']
