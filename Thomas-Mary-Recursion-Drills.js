@@ -87,8 +87,40 @@
 // }
 // reverseString("hello");
 
-function nthTriangular(nth){
-  return nth;
+
+
+
+// nth Triangular Number Recursive Solution
+// function nthTriangular(nth){
+//   if (nth <= 0) {
+//     return 0;
+//   }
+//   return nth + nthTriangular(nth - 1);
+// }
+// console.log(nthTriangular(4));
+
+
+// Iterative solutiom
+// function nthTriangular(nth) {
+//   let total = 0;
+//   for(let i = nth; i >=0; i--) {
+//     total = total + i;
+//   }
+//   return total;
+// }
+
+// console.log(nthTriangular(6));
+
+
+
+// String Splitter
+function stringSplitter(string, separator) {
+  return string;
 }
 
-1, 3, 6, 10, 15, 21, 28, 36, 45
+let string = 'dog cat rat';
+expected = 
+dog
+cat
+rat
+console.log(stringSplitter(string, ' '));
