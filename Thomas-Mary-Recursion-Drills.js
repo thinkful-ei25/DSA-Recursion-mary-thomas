@@ -28,17 +28,27 @@
 
 
 
-// Array Double
-function doubleArray(array) {
-  if (array.length === 0) {
-    return [];
-  }
-  return [array[0]*2, ...doubleArray(array.slice(1))];
-}
-console.log(doubleArray([1, 2, 3]));
+// // Array Double
+// function doubleArray(array) {
+//   if (array.length === 0) {
+//     return [];
+//   }
+//   return [array[0]*2, ...doubleArray(array.slice(1))];
+// }
+// console.log(doubleArray([1, 2, 3]));
 
-// if you want to use push
-function some(arr, newArr) { newArr = newArr || []; }
+// // Array Double BACKWARDS
+// function doubleArray(array) {
+//   if (array.length === 0) {
+//     return [];
+//   }
+//   return [ ...doubleArray(array.slice(1)), array[0]*2];
+// }
+// console.log(doubleArray([1, 2, 3]));
+
+
+// // if you want to use push
+// function some(arr, newArr) { newArr = newArr || []; }
 
 
 
@@ -53,3 +63,32 @@ function some(arr, newArr) { newArr = newArr || []; }
 // }
 
 // console.log(doubleArray([1, 2, 3]));
+
+// string[string.length-1] => e
+// string.slice(-1)
+
+//Reverse String using SLICE
+// function reverseString(string){
+//   if (string.length === 0) {
+//     return '';
+//   }
+//   const stringLetter = string[0];
+//   return reverseString(string.slice(1)) + stringLetter;
+// }
+
+// console.log(reverseString('clone'));
+
+//Reverse String using .substr & .charAt
+// function reverseString(str) {
+//   if (str === "")
+//     return "";
+//   else
+//     return reverseString(str.substr(1)) + str.charAt(0);
+// }
+// reverseString("hello");
+
+function nthTriangular(nth){
+  return nth;
+}
+
+1, 3, 6, 10, 15, 21, 28, 36, 45
